@@ -1,5 +1,6 @@
 package org.neoedu.model.repositories;
 
+import org.neoedu.model.entities.Program;
 import org.neoedu.model.entities.Question;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

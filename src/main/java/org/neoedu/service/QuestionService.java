@@ -2,7 +2,7 @@ package org.neoedu.service;
 
 import org.neoedu.dto.QuestionDto;
 import org.neoedu.model.entities.Question;
-import org.springframework.data.domain.Page;
+//import org.springframework.data.domain.Page;
 import java.util.List;
 
 public interface QuestionService {
