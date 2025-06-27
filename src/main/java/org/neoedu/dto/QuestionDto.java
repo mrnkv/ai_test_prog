@@ -1,5 +1,9 @@
 package org.neoedu.dto;
 
-import java.util.Set;
+import lombok.Data;
 
-public record QuestionDto(Long id, String text, Long themeId, Set<Long> programIds) {}
+@Data
+public class QuestionDto {
+    private String text;
+    private Long themeId;
+}

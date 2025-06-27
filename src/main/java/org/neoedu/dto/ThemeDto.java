@@ -1,3 +1,9 @@
 package org.neoedu.dto;
 
-public record ThemeDto(Long id, String name, String description) {}
+import lombok.Data;
+
+@Data
+public class ThemeDto {
+    private String name;
+    private String description;
+}

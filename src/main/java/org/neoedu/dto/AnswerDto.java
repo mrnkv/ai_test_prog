@@ -1,3 +1,11 @@
 package org.neoedu.dto;
 
-public record AnswerDto(Long id, String text, boolean isRight, String info, Long questionId) {}
+import lombok.Data;
+
+@Data
+public class AnswerDto {
+    private String text;
+    private Boolean isRight;
+    private String info;
+    private Long questionId;
+}

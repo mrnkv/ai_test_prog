@@ -1,5 +1,11 @@
 package org.neoedu.dto;
 
+import lombok.Data;
 import java.util.Set;
 
-public record ProgramDto(Long id, String name, String description, Set<Long> questionIds) {}
+@Data
+public class ProgramDto {
+    private String name;
+    private String description;
+    private Set<Long> questionIds;
+}

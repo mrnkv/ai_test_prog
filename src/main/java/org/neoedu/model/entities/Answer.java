@@ -1,28 +1,28 @@
-package org.neoedu.model;
+package org.neoedu.model.entities;
 
+import lombok.Getter;
+import lombok.Setter;
 import jakarta.persistence.*;
-import lombok.*;
 
 @Entity
 @Table(name = "answers")
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
+@Getter
+@Setter
 public class Answer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @Column(name = "a_text", nullable = false)
+    
+    @Column(name = "a_text")
     private String text;
-
-    @Column(name = "is_right", nullable = false)
-    private boolean isRight;
-
+    
+    @Column(name = "is_right")
+    private Boolean isRight;
+    
     @Column(name = "info")
     private String info;
-
+    
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "question_id", nullable = false)
+    @JoinColumn(name = "question_id")
     private Question question;
 }
